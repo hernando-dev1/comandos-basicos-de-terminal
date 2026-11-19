@@ -2,6 +2,8 @@
 
 Projeto desenvolvido por **Hernando Procópio de Souza Almeida** para a disciplina **Linguagem de Script para Web** — Instituto Federal do Triângulo Mineiro (IFTM), Campus Uberaba Parque Tecnológico.
 
+https://hernando-dev1.github.io/comandos-basicos-de-terminal/
+
 ## Tema Escolhido
 **Comandos Básicos de Terminal**
 
