@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comandos Básicos de Terminal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header>
+    <h1>Comandos Básicos de Terminal</h1>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="#destaques" aria-current="page">Comandos</a></li>
+        <li><a href="#tabela-comandos">Resumo</a></li>
+        <li><a href="#dicas">Dicas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section id="destaques" aria-labelledby="t-destaques">
+      <h2 id="t-destaques">Comandos em destaque</h2>
+
+      <article>
+        <h3>Navegação entre diretórios com <code>cd</code></h3>
+        <figure>
+          <img src="img/comando-cd.png" alt="Terminal exibindo troca de diretório com o comando cd" width="320" height="200">
+          <figcaption>Exemplo de navegação entre pastas no terminal.</figcaption>
+        </figure>
+        <p>Use <code>cd pasta</code> para entrar em um diretório e <code>cd ..</code> para voltar um nível. É <strong>essencial</strong> para circular pelo sistema de arquivos com rapidez.</p>
+        <p>Atualizado em <time datetime="2026-11-19">19 de novembro de 2026</time>.</p>
+      </article>
+
+      <article>
+        <h3>Listagem de arquivos com <code>ls</code></h3>
+        <figure>
+          <img src="img/comando-ls.png" alt="Terminal exibindo listagem detalhada de arquivos com o comando ls -la" width="320" height="200">
+          <figcaption>Listagem de arquivos visíveis e ocultos no diretório atual.</figcaption>
+        </figure>
+        <p>O comando <code>ls</code> mostra os itens da pasta atual, enquanto <code>ls -la</code> inclui arquivos ocultos e detalhes como permissões e tamanho.</p>
+        <p>Atualizado em <time datetime="2026-11-19">19 de novembro de 2026</time>.</p>
+      </article>
+
+      <article>
+        <h3>Ajuste de permissões com <code>chmod</code></h3>
+        <figure>
+          <img src="img/comando-chmod.png" alt="Terminal exibindo alteração de permissão de arquivo com chmod" width="320" height="200">
+          <figcaption>Configuração de permissões em arquivos e scripts.</figcaption>
+        </figure>
+        <p>Com <code>chmod</code> você altera permissões de leitura, escrita e execução. Tenha <em>cuidado</em> ao aplicar permissões amplas em pastas importantes.</p>
+        <p>Atualizado em <time datetime="2026-11-19">19 de novembro de 2026</time>.</p>
+      </article>
+    </section>
+
+    <section id="tabela-comandos" aria-labelledby="t-tabela">
+      <h2 id="t-tabela">Tabela de referência rápida</h2>
+      <table>
+        <caption>Comandos básicos do terminal e suas funções</caption>
+        <thead>
+          <tr>
+            <th scope="col">Comando</th>
+            <th scope="col">Função principal</th>
+            <th scope="col">Uso comum</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><code>pwd</code></th>
+            <td>Mostra o caminho completo da pasta atual</td>
+            <td><code>pwd</code></td>
+          </tr>
+          <tr>
+            <th scope="row"><code>ls</code></th>
+            <td>Lista arquivos e diretórios</td>
+            <td><code>ls -la</code></td>
+          </tr>
+          <tr>
+            <th scope="row"><code>cd</code></th>
+            <td>Muda de diretório</td>
+            <td><code>cd ..</code></td>
+          </tr>
+          <tr>
+            <th scope="row"><code>mkdir</code></th>
+            <td>Cria uma nova pasta</td>
+            <td><code>mkdir projeto</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <aside id="dicas" aria-label="Dicas rápidas de terminal">
+      <h2>Dicas rápidas</h2>
+      <ul>
+        <li>Pressione <kbd>Tab</kbd> para autocompletar nomes de arquivos e pastas.</li>
+        <li>Use as setas <kbd>↑</kbd> e <kbd>↓</kbd> para percorrer comandos anteriores.</li>
+        <li>Confira sempre a pasta atual com <code>pwd</code> antes de mover ou apagar arquivos.</li>
+      </ul>
+    </aside>
+
+    <section id="contato" aria-labelledby="t-contato">
+      <h2 id="t-contato">Formulário de contato</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Envie sua dúvida ou sugestão</legend>
+
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" autocomplete="name" required>
+
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        </fieldset>
+
+        <button type="submit">Enviar mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <address>
+      <a href="mailto:hernando.almeida@estudante.iftm.edu.br">hernando.almeida@estudante.iftm.edu.br</a>
+    </address>
+    <p><small>&copy; 2026 Projeto da disciplina LSW — IFTM</small></p>
+  </footer>
+</body>
+</html>
