@@ -3,56 +3,103 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Comandos Básicos de Terminal</title>
+  <title>Comandos básicos de terminal: guia para iniciantes</title>
+  <meta name="description" content="Aprenda comandos básicos de terminal Linux para navegar entre diretórios, listar arquivos e gerenciar permissões com exemplos simples.">
+  <meta name="keywords" content="comandos básicos de terminal, comandos Linux para iniciantes, aprender a usar o terminal">
+  <link rel="canonical" href="https://hernando-dev1.github.io/comandos-basicos-de-terminal/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#102a43">
+  <link rel="icon" href="https://hernando-dev1.github.io/comandos-basicos-de-terminal/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Comandos Básicos de Terminal">
+  <meta property="og:title" content="Comandos básicos de terminal: guia para iniciantes">
+  <meta property="og:description" content="Aprenda comandos Linux para navegar entre diretórios, listar arquivos e gerenciar permissões.">
+  <meta property="og:url" content="https://hernando-dev1.github.io/comandos-basicos-de-terminal/">
+  <meta property="og:image" content="https://hernando-dev1.github.io/comandos-basicos-de-terminal/img/og-comandos-terminal.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Comandos básicos de terminal: guia para iniciantes">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Comandos básicos de terminal: guia para iniciantes">
+  <meta name="twitter:description" content="Aprenda comandos Linux com exemplos simples.">
+  <meta name="twitter:image" content="https://hernando-dev1.github.io/comandos-basicos-de-terminal/img/og-comandos-terminal.png">
+  <link rel="preload" as="image" href="img/comando-cd.webp" type="image/webp">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Comandos básicos de terminal: guia para iniciantes",
+    "description": "Guia introdutório de comandos de terminal Linux para navegar entre diretórios, listar arquivos e gerenciar permissões.",
+    "inLanguage": "pt-BR",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://hernando-dev1.github.io/comandos-basicos-de-terminal/"
+    },
+    "image": "https://hernando-dev1.github.io/comandos-basicos-de-terminal/img/og-comandos-terminal.png",
+    "author": {
+      "@type": "Person",
+      "name": "Hernando Procópio de Souza Almeida"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Projeto acadêmico — IFTM"
+    },
+    "dateModified": "2026-11-26"
+  }
+  </script>
 </head>
 <body>
   <a class="pular" href="#conteudo">Pular para o conteúdo</a>
-
   <header>
-    <h1>Comandos Básicos de Terminal</h1>
-    <nav aria-label="Navegação principal">
-      <ul>
-        <li><a href="#destaques" aria-current="page">Comandos</a></li>
-        <li><a href="#tabela-comandos">Resumo</a></li>
-        <li><a href="#dicas">Dicas</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+    <div class="cabecalho">
+      <h1>Comandos Básicos de Terminal</h1>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="#destaques" aria-current="page">Comandos</a></li>
+          <li><a href="#tabela-comandos">Resumo</a></li>
+          <li><a href="#dicas">Dicas</a></li>
+          <li><a href="sobre.html">Sobre o projeto</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main id="conteudo">
     <section id="destaques" aria-labelledby="t-destaques">
       <h2 id="t-destaques">Comandos em destaque</h2>
+      <p class="introducao">Conheça comandos Linux para iniciantes e aprenda a usar o terminal em tarefas do dia a dia.</p>
 
       <article>
         <h3>Navegação entre diretórios com <code>cd</code></h3>
         <figure>
-          <img src="img/comando-cd.png" alt="Terminal exibindo troca de diretório com o comando cd" width="320" height="200">
+          <img src="img/comando-cd.webp" alt="Terminal mostrando o comando cd para entrar em uma pasta e pwd para exibir o caminho atual" width="665" height="387" fetchpriority="high" decoding="async">
           <figcaption>Exemplo de navegação entre pastas no terminal.</figcaption>
         </figure>
-        <p>Use <code>cd pasta</code> para entrar em um diretório e <code>cd ..</code> para voltar um nível. É <strong>essencial</strong> para circular pelo sistema de arquivos com rapidez.</p>
-        <p>Atualizado em <time datetime="2026-11-19">19 de novembro de 2026</time>.</p>
+        <p>Use <code>cd pasta</code> para entrar em um diretório e <code>cd ..</code> para voltar um nível. É essencial para circular pelo sistema de arquivos com rapidez.</p>
+        <p class="atualizacao">Atualizado em <time datetime="2026-11-26">26 de novembro de 2026</time>.</p>
       </article>
 
       <article>
         <h3>Listagem de arquivos com <code>ls</code></h3>
         <figure>
-          <img src="img/comando-ls.png" alt="Terminal exibindo listagem detalhada de arquivos com o comando ls -la" width="320" height="200">
+          <img src="img/comando-ls.webp" alt="Terminal Linux exibindo arquivos e pastas com o comando ls -la" width="574" height="429" loading="lazy" decoding="async">
           <figcaption>Listagem de arquivos visíveis e ocultos no diretório atual.</figcaption>
         </figure>
         <p>O comando <code>ls</code> mostra os itens da pasta atual, enquanto <code>ls -la</code> inclui arquivos ocultos e detalhes como permissões e tamanho.</p>
-        <p>Atualizado em <time datetime="2026-11-19">19 de novembro de 2026</time>.</p>
+        <p class="atualizacao">Atualizado em <time datetime="2026-11-26">26 de novembro de 2026</time>.</p>
       </article>
 
       <article>
         <h3>Ajuste de permissões com <code>chmod</code></h3>
         <figure>
-          <img src="img/comando-chmod.png" alt="Terminal exibindo alteração de permissão de arquivo com chmod" width="320" height="200">
-          <figcaption>Configuração de permissões em arquivos e scripts.</figcaption>
+          <img src="img/comando-chmod.webp" alt="Terminal Linux mostrando o comando chmod 777 aplicado a uma pasta" width="812" height="391" loading="lazy" decoding="async">
+          <figcaption>Exemplo de alteração de permissões em arquivos e diretórios.</figcaption>
         </figure>
-        <p>Com <code>chmod</code> você altera permissões de leitura, escrita e execução. Tenha <em>cuidado</em> ao aplicar permissões amplas em pastas importantes.</p>
-        <p>Atualizado em <time datetime="2026-11-19">19 de novembro de 2026</time>.</p>
+        <p>Com <code>chmod</code> você altera permissões de leitura, escrita e execução. Tenha cuidado ao aplicar permissões amplas: <code>chmod 777</code> concede acesso total a todos os usuários.</p>
+        <p class="atualizacao">Atualizado em <time datetime="2026-11-26">26 de novembro de 2026</time>.</p>
       </article>
     </section>
 
@@ -61,33 +108,14 @@
       <table>
         <caption>Comandos básicos do terminal e suas funções</caption>
         <thead>
-          <tr>
-            <th scope="col">Comando</th>
-            <th scope="col">Função principal</th>
-            <th scope="col">Uso comum</th>
-          </tr>
+          <tr><th scope="col">Comando</th><th scope="col">Função principal</th><th scope="col">Uso comum</th></tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row"><code>pwd</code></th>
-            <td>Mostra o caminho completo da pasta atual</td>
-            <td><code>pwd</code></td>
-          </tr>
-          <tr>
-            <th scope="row"><code>ls</code></th>
-            <td>Lista arquivos e diretórios</td>
-            <td><code>ls -la</code></td>
-          </tr>
-          <tr>
-            <th scope="row"><code>cd</code></th>
-            <td>Muda de diretório</td>
-            <td><code>cd ..</code></td>
-          </tr>
-          <tr>
-            <th scope="row"><code>mkdir</code></th>
-            <td>Cria uma nova pasta</td>
-            <td><code>mkdir projeto</code></td>
-          </tr>
+          <tr><th scope="row"><code>pwd</code></th><td>Mostra o caminho completo da pasta atual</td><td><code>pwd</code></td></tr>
+          <tr><th scope="row"><code>ls</code></th><td>Lista arquivos e diretórios</td><td><code>ls -la</code></td></tr>
+          <tr><th scope="row"><code>cd</code></th><td>Muda de diretório</td><td><code>cd ..</code></td></tr>
+          <tr><th scope="row"><code>mkdir</code></th><td>Cria uma nova pasta</td><td><code>mkdir projeto</code></td></tr>
+          <tr><th scope="row"><code>chmod</code></th><td>Altera permissões de arquivos e diretórios</td><td><code>chmod 755 script.sh</code></td></tr>
         </tbody>
       </table>
     </section>
@@ -102,31 +130,15 @@
     </aside>
 
     <section id="contato" aria-labelledby="t-contato">
-      <h2 id="t-contato">Formulário de contato</h2>
-      <form action="#" method="post">
-        <fieldset>
-          <legend>Envie sua dúvida ou sugestão</legend>
-
-          <label for="nome">Nome</label>
-          <input id="nome" name="nome" type="text" autocomplete="name" required>
-
-          <label for="email">E-mail</label>
-          <input id="email" name="email" type="email" autocomplete="email" required>
-
-          <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-        </fieldset>
-
-        <button type="submit">Enviar mensagem</button>
-      </form>
+      <h2 id="t-contato">Contato</h2>
+      <p>Dúvidas ou sugestões sobre o conteúdo? Entre em contato por e-mail.</p>
+      <p><a href="mailto:hernando.almeida@estudante.iftm.edu.br">hernando.almeida@estudante.iftm.edu.br</a></p>
     </section>
   </main>
 
   <footer>
-    <address>
-      <a href="mailto:hernando.almeida@estudante.iftm.edu.br">hernando.almeida@estudante.iftm.edu.br</a>
-    </address>
-    <p><small>&copy; 2026 Projeto da disciplina LSW — IFTM</small></p>
+    <p><small>Projeto acadêmico da disciplina Linguagem de Script para Web — IFTM</small></p>
+    <p><a href="sobre.html">Conheça o projeto e seus objetivos</a></p>
   </footer>
 </body>
 </html>
