@@ -31,16 +31,22 @@ As palavras-chave foram distribuídas naturalmente entre títulos, descrições 
 
 ## 4. Lighthouse — antes e depois
 
-> As notas da coluna “Antes” foram registradas a partir do relatório Lighthouse enviado em 26/11/2026. As notas da coluna “Depois” serão preenchidas após publicar e testar a versão otimizada.
+> As notas da coluna “Antes” foram registradas a partir do relatório Lighthouse enviado em 26/11/2026. As notas da coluna “Depois” foram registradas a partir do relatório Lighthouse da versão publicada após as otimizações, também em modo Mobile.
 
 | Categoria | Antes (Mobile) | Depois (Mobile) |
 |---|---:|---:|
-| Performance | 99 | A medir |
-| Accessibility | 100 | A medir |
-| Best Practices | 100 | A medir |
-| SEO | 91 | A medir |
+| Performance | 99 | 100 |
+| Accessibility | 100 | 100 |
+| Best Practices | 100 | 100 |
+| SEO | 91 | 100 |
 
 **Metas solicitadas na atividade:** SEO ≥ 95 e Accessibility ≥ 90 após as otimizações.
+
+
+## 4.1. Validação dos dados estruturados (Schema.org)
+
+- Página inicial (`index.html`): validada em https://validator.schema.org/ em 26/11/2026. O resultado exibiu o tipo `TechArticle`, com **0 erros e 0 avisos**.
+- Página `sobre.html`: validada em https://validator.schema.org/ em 26/11/2026. O resultado exibiu o tipo `AboutPage`, com **0 erros e 0 avisos**.
 
 ## 5. Observações finais
 
